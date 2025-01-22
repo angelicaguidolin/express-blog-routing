@@ -1,11 +1,11 @@
 const express = require('express')
 const router = express.Router()
 //INDEX
-router.get('/', (req, res) => {
+router.get('/bacheca', (req, res) => {
     res.send("server del blog ")
 })
 //SHOW
-router.get('/id', (req, res) => {
+router.get('/:id', (req, res) => {
     res.send(` dettagli sul post ${req.params.id} `)
 })
 //CREATE
